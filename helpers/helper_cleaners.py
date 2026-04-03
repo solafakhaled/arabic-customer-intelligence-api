@@ -51,7 +51,7 @@ def preprocessing_tokens(text):
     return " ".join(tokens)
 
 data = data.map(lambda x: {"text": preprocessing_tokens(x["text"])})
-print(data[0:5])
+#print(data[0:5])
     
 def get_cleaned_data():
     return data
